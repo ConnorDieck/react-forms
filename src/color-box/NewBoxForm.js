@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 
 const NewBoxForm = ({ addBox }) => {
-	const INITIAL_STATE = [
-		{
-			width           : "",
-			height          : "",
-			backgroundColor : ""
-		}
-	];
+	const INITIAL_STATE = {
+		width           : "",
+		height          : "",
+		backgroundColor : ""
+	};
 	const [ formData, setFormData ] = useState(INITIAL_STATE);
 
 	const handleChange = evt => {
